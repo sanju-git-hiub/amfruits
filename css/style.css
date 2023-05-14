@@ -1,0 +1,992 @@
+:root {
+    --primeColor: #2824ED;
+    --secondaryColor: #ED242D;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.banner {
+    height: 100vh;
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav .navbar-brand img {
+    width: 100%;
+}
+
+nav .navbar-brand {
+    width: 100%;
+    max-width: 150px;
+}
+
+nav .navbar-nav li a {
+    color: #2c6437 !important;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+nav .navbar-nav li a.active {
+    color: var(--primeColor) !important;
+}
+
+nav .navbar-nav {
+    margin-top: -40px;
+}
+
+nav .navbar-nav li {
+    margin-left: 13px;
+}
+
+a.common-btn {
+    background: linear-gradient(93.7deg, #C80C0C 3.46%, #DE0000 103.87%);
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 44.5px;
+    padding: 3px 25px !important;
+    color: #fff !important;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav .navbar-nav {
+    align-items: center;
+}
+
+.banner .banner-sm img {
+    width: 100%;
+}
+
+.banner .banner-sm {
+    margin-top: -40px;
+}
+
+.banner .caption h2 {
+    color: #2f6536;
+    font-weight: 500;
+    font-size: 35px;
+    z-index: 2;
+    position: relative;
+}
+
+.banner .caption h2::after {
+    content: '';
+    background: url('../img/h2bg.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner .caption h1 {
+    color: var(--secondaryColor);
+    font-weight: 700;
+    font-size: 62px;
+    margin: 3rem 0;
+}
+
+.banner .caption h1 span {
+    color: var(--primeColor);
+}
+
+.banner .caption .common-btn {
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.about-con {
+    width: 100%;
+    display: inline-block;
+    background: linear-gradient(251.1deg, #CCDEFF 11.58%, #CCFBE3 97.42%);
+    padding-top: 20px;
+    padding-bottom: 80px;
+    position: relative;
+    margin-top: 0px;
+}
+
+.about-con h3 {
+    color: #000;
+    font-weight: 500;
+    font-size: 40px;
+    z-index: 2;
+    position: relative;
+    width: auto;
+    display: inline-block;
+}
+
+.about-con h3::after {
+    content: '';
+    background: url(../img/h2bg.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -30px;
+    background-size: contain;
+    height: 158px;
+    width: 238px;
+    bottom: 0;
+    z-index: -1;
+    top: -7px;
+}
+
+.about-con .img-bg img {
+    width: 100%;
+}
+
+.about-con h5,
+.get-in-touch .c-con h5 {
+    font-weight: 700;
+    color: var(--secondaryColor);
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.about-con h5 span,
+.get-in-touch .c-con h5 span {
+    color: var(--primeColor);
+}
+
+.about-con p.alt {
+    font-size: 18px;
+    line-height: 34px;
+    color: #000;
+    position: relative;
+}
+
+.about-con p.alt::after {
+    content: '';
+    background: url(../img/about-after2.png);
+    width: 70px;
+    height: 70px;
+    bottom: 2rem;
+    right: 7rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.season-con {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 9;
+}
+
+.season-con::after {
+    content: '';
+    left: 0;
+    right: 0;
+    background-image: url(../img/season.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -30px;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.common-hed {
+    color: var(--secondaryColor);
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 43px;
+    text-align: center;
+}
+
+.common-hed span {
+    color: #000;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.season-con {
+    position: relative;
+}
+
+.season-con ul.list {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 70px;
+    margin-top: 3rem;
+}
+
+.season-con::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    background: url(../img/seasonal-leaf.png);
+    width: 134px;
+    height: 118px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.season-con ul.list li.main {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 10px 11px 15px 2px #ddd;
+}
+
+.season-con ul.list li.main img {
+    width: 100%;
+}
+
+.season-con ul.list li.main .caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(357.3deg, rgba(0, 0, 0, 0.4028) 7.26%, rgba(0, 0, 0, 0) 90.36%);
+    backdrop-filter: blur(6px);
+    border-radius: 0px 0px 21px 21px;
+    height: 110px;
+    display: inline-flex;
+    left: 0;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.season-con ul li.main .caption h4 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.season-con ul li.main .caption h4 span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.star {
+    justify-content: end;
+    display: flex;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.star ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.star ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: 10px !important;
+    box-shadow: none;
+}
+
+.star ul li i {
+    color: #E4C106;
+    font-size: 18px;
+}
+
+.star ul li.white i {
+    color: #fff;
+}
+
+.season-con ul li .caption h5 {
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.get-in-touch {
+    width: 100%;
+    background: url(../img/getintouch-new.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 5rem 20px;
+    background-size: cover;
+}
+
+.get-in-touch .c-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/c.png);
+    height: 600px;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    background-size: contain;
+    padding-left: 0rem;
+}
+
+.get-in-touch .c-con img {
+    width: 100%;
+}
+
+.get-in-touch .common-btn {
+    line-height: 46px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.get-in-touch .c-con h5 {
+    font-size: 48px !important;
+}
+
+.clippath {
+    width: 100%;
+    height: 100px;
+    top: -99px;
+    position: absolute;
+    clip-path: polygon(100% 43%, 0 100%, 100% 100%);
+    background: linear-gradient(132deg, #ccf4ea 11.58%, #ccdeff 97.42%);
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(180deg, #C5E4FF 0%, rgba(205, 255, 216, 0.94) 100%);
+    padding: 4rem 0;
+    position: relative;
+    /* clip-path: inset(0px round 100% 100% 0px 0px); */
+}
+
+footer::after {
+    content: '';
+    background: #c5e5fd;
+    /* clip-path: inset(0px round 100% 100% 0px 0px); */
+    clip-path: ellipse(53% 90% at 50% 123px);
+    position: absolute;
+    top: -6rem;
+    left: 0;
+    width: 100%;
+    right: 0;
+    height: 105px;
+}
+
+footer .logo-ftr {
+    width: 80%;
+}
+
+footer .logo-ftr p {
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer ul li a {
+    font-size: 17px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+footer ul li i {
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+footer h3.alt {
+    font-weight: 700;
+    color: #000;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.banner.innerpage {
+    background: none;
+    margin-bottom: 130px;
+    height: auto;
+    position: relative;
+}
+.banner.innerpage::after{
+    position: fixed;
+    content: '';
+    background: linear-gradient(107.39deg, #EEE8FF 0.57%, rgba(216, 241, 255, 0.979167) 0.57%, #C7FFD6 97.03%);
+    top: 0;
+    width: 100%;
+    height: 48rem;
+    z-index: -1;
+}
+
+.banner.innerpage nav .navbar-nav {
+    margin-top: 0;
+}
+
+.inner-hed {
+    font-size: 36px;
+    color: var(--secondaryColor);
+    text-align: center;
+    line-height: 55px;
+    margin-top: 1rem;
+}
+
+.inner-hed span {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--primeColor);
+}
+img.innerbg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 97px;
+    width: 47%;
+}
+
+.tab-con {
+    position: relative;
+    margin-top: 30px;
+}
+
+.tab-con .nav {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.tab-con .nav-pills .nav-link {
+    margin: auto 0;
+}
+
+.tab-con li.nav-item.slick-slide button {
+    font-weight: 400;
+    font-size: 21px;
+    width: 82%;
+    padding: 3px 0;
+    padding-right: 8px;
+    text-align: right;
+    position: relative;
+}
+
+.tab-con .nav-pills .nav-link.active {
+    color: var(--secondaryColor);
+    font-weight: 700;
+    background: transparent;
+    border-radius: 0;
+}
+
+.tab-con .nav-pills .nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    border-bottom: solid 3px var(--secondaryColor);
+}
+
+.tab-con .slick-list {
+    position: relative;
+}
+
+.tab-con .slick-slide {
+    border-bottom: solid 1px #958b8b47;
+
+}
+
+.tab-con .slide-ctrl {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    background-color: #fff;
+    width: 49px;
+    height: 49px;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 34px;
+    cursor: pointer;
+    color: #001375;
+}
+
+.tab-con .controlls {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+}
+
+.tab-con .controlls .next {
+    float: right;
+}
+
+.tab-con .prolist {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.tab-con .season-con {
+    background: transparent;
+    padding: 0;
+}
+
+.tab-con .season-con::after {
+    display: none;
+}
+
+.tab-con .season-con ul.list {
+    grid-gap: 50px;
+    margin-top: 65px;
+}
+
+.tab-con .season-con ul.list li.main {
+    filter: drop-shadow(10px 15px 22px rgba(0, 0, 0, 0.25));
+    box-shadow: none;
+
+}
+
+.tab-con .season-con::before {
+    display: none;
+}
+
+.about-con .after {
+    position: relative;
+}
+
+.about-con .after img {
+    position: absolute;
+    top: -60px;
+    right: 6rem;
+    width: 14%;
+}
+.banner.innerpage nav .navbar-nav{
+    margin-top: 15px;
+}
+@media(max-width:320px){
+    .banner .caption h1{
+        font-size: 27px !important;
+    }
+    .common-hed span{
+        font-size: 16px !important;
+    }
+    .about-con h5, .get-in-touch .c-con h5{
+        font-size: 31px;
+    }
+    .inner-hed span {
+        font-size: 26px !important;
+    }
+    .inner-hed{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .tab-con .slide-ctrl{
+        font-size: 21px;
+        height: 36px;
+        width: 36px;
+    }
+}
+
+
+@media(max-width:767px){
+
+    ul.navbar-nav {
+        align-items: start;
+        background: #fff;
+        padding: 21px 0;
+        margin-top: 22px;
+        border-radius: 10px;
+    }
+    .banner .caption{
+        text-align: center;
+    }
+    .banner .caption h2::after{
+        display: none;
+    }
+    .banner .caption h2{
+        font-size: 24px;
+    }
+    .banner .caption h1{
+        font-size: 38px;
+        margin-top:10px;
+        margin-bottom: 15px;
+    }
+    .banner .row{
+        flex-direction: column-reverse;
+    }
+    .banner{
+        height: auto;
+        background: #cbfbe0;
+        padding-bottom: 50px;
+    }
+    .navbar{
+        margin-bottom: 25px;
+    }
+    .clippath{
+        display: none;
+    }
+    .about-con .after{
+        text-align: center;
+    }
+    .about-con{
+        padding:4rem 0;
+    }
+    .about-con h5, .get-in-touch .c-con h5{
+        font-size: 38px;
+    }
+    .about-con h3{
+        font-size: 30px;
+    }
+    .about-con h3::after{
+        width: 200px;
+    }
+    .about-con p.alt {
+        font-size: 16px;
+    }
+    .common-hed{
+        font-size: 30px;
+        line-height: 24px;
+    }
+    .common-hed span{
+        font-size: 19px;
+        margin-top:16px;
+        display: inline-block;
+    }
+    .season-con::before{
+        width: 33px;
+        height: 26px;
+    }
+    .season-con::after{
+        display: none;
+    }
+    .season-con ul.list{
+        grid-template-columns: 12fr;
+        padding: 0 30px;
+        margin-top: 25px;
+        grid-gap: 30px;
+    }
+    .season-con{
+        padding: 3rem 0;
+    }
+    nav .navbar-nav li .common-btn{
+        margin-top: 10px;
+    }
+    .get-in-touch{
+        background-size: cover;
+        padding:30px 0;
+    }
+    .get-in-touch .c-con{
+        background: none;
+        height: auto;
+    }
+    footer::after{
+        display: none;
+    }
+    .get-in-touch .c-con h5 {
+        font-size: 24px !important;
+        margin-top: 0;
+    }
+    .c-con .c-pad{
+        text-align: center;
+        background: #fff;
+        padding: 30px 40px;
+        border-radius: 13px;
+    }
+    .get-in-touch .common-btn {
+        line-height: 41px;
+        margin-top: 6px;
+        font-size: 18px;
+    }
+    footer{
+        padding:3rem 0;
+    }
+    footer .logo-ftr {
+        width: 100%;
+    }
+    footer .logo-ftr p{
+        font-size: 15px;
+    }
+    footer ul li a{
+        font-size: 15px;
+    }
+    footer h3.alt{
+        font-size: 20px;
+        margin-top: 20px
+    }
+    footer .logo-ftr img{
+        width: 46%;
+    }
+    .star ul li i{
+        font-size: 12px;
+    }
+    .season-con ul li.main .caption h4{
+        width: 100%;
+        font-size: 19px;
+    }
+    .banner.innerpage .season-con ul li.main .caption h4 span{
+        font-size: 14px;
+    }
+    .tab-con li.nav-item.slick-slide button{
+        width: 100%;
+    }
+    .tab-con li.nav-item.slick-slide button{
+        font-size: 17px;
+        text-align: center;
+    }
+    .inner-hed span{
+        font-size: 33px;
+    }
+    .tab-con .controlls{
+        width: 100%;
+    }
+    .banner.innerpage .season-con ul li.main .caption h4{
+        text-align: left;
+    }
+    .tab-con .season-con ul.list {
+        grid-gap: 25px;
+        margin-top:35px;
+    }
+    .banner.innerpage{
+        margin-bottom: 10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .banner .caption {
+        margin-top: 40px;
+    }
+
+    .banner .caption h1 {
+        font-size: 38px;
+        margin-bottom: 25px;
+        line-height: 44px;
+    }
+
+    .banner .caption h2 {
+        font-size: 24px;
+    }
+
+    .banner .caption h2::after {
+        background-size: contain;
+        width: 45%;
+        top: 0;
+        transform: none;
+        left: 0;
+    }
+
+    .banner .caption .common-btn {
+        font-size: 17px;
+    }
+
+    ul.navbar-nav {
+        align-items: start;
+        background: #fff;
+        padding: 21px 0;
+        margin-top: 22px;
+        border-radius: 10px;
+    }
+
+    .about-con h3 {
+        font-size: 28px;
+    }
+
+    .about-con h3::after {
+        width: 185px;
+    }
+
+    .about-con h5,
+    .get-in-touch .c-con h5 {
+        font-size: 38px;
+    }
+
+    .about-con p.alt {
+        font-size: 15px;
+        line-height: 29px;
+    }
+
+    .about-con {
+        padding: 50px 0;
+    }
+
+    .common-hed {
+        font-size: 36px;
+    }
+
+    .common-hed span {
+        font-size: 21px;
+    }
+
+    .season-con {
+        padding: 40px 0;
+    }
+
+    .season-con ul.list {
+        grid-gap: 30px;
+        /* grid-template-columns: 1fr 1fr;
+        justify-content: center; */
+    }
+
+    .season-con ul li.main .caption h4 span {
+        font-size: 12px;
+    }
+
+    .season-con ul.list li.main .caption {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 10px;
+    }
+
+    .star {
+        justify-content: start;
+        margin-bottom: 0;
+    }
+
+    .star ul li:first-child {
+        margin-left: 0 !important;
+    }
+
+    .star ul li i {
+        font-size: 12px;
+    }
+
+    .season-con ul li.main .caption h4 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0;
+    }
+
+    .season-con ul li .caption h5 {
+        font-size: 18px;
+    }
+
+    .get-in-touch {
+        background-size: contain;
+        padding: 40px 20px;
+    }
+
+    footer::after {
+        display: none;
+    }
+
+    .get-in-touch .c-con {
+        background-size: cover;
+        height: 325px;
+    }
+
+    footer .logo-ftr {
+        width: 100%;
+    }
+
+    footer .logo-ftr img {
+        width: 140px;
+    }
+
+    footer h3.alt {
+        margin-top: 25px;
+    }
+    .about-con .after img{
+        top:0;
+    }
+    .tab-con li.nav-item.slick-slide button{
+        width: 100%;
+    }
+    .tab-con li.nav-item.slick-slide button{
+        font-size: 17px;
+    }
+    .inner-hed span{
+        font-size: 33px;
+    }
+    .tab-con li.nav-item.slick-slide button{
+        text-align: center;
+    }
+    .tab-con .season-con ul.list{
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* .caption .d-flex.flex-wrap.justify-content-end {
+        justify-content: start !important;
+    } */
+    .season-con ul.list li.main .caption .star{
+        justify-content: end;
+    }
+    .banner {
+        padding-bottom: 71px;
+        height: auto;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .season-con ul.list {
+        grid-gap: 30px;
+    }
+
+    .get-in-touch .c-con {
+        height: 370px;
+    }
+
+    .get-in-touch .c-con h5 {
+        font-size: 33px !important;
+    }
+
+    .get-in-touch .common-btn {
+        line-height: 37px;
+        margin-top: 2px;
+        font-size: 17px;
+    }
+
+    .banner .caption h1{
+        font-size: 41px;
+    }
+    .about-con{
+        padding-top:60px;
+    }
+    .about-con p.alt{
+        font-size: 16px;
+    }
+    .about-con h5, .get-in-touch .c-con h5{
+        font-size: 50px;
+    }
+    .common-hed span{
+        font-size: 22px;
+    }
+    footer{
+        padding:1rem 0;
+    }
+    footer h3.alt{
+        font-size: 20px;
+    }
+    .banner .banner-sm {
+        margin-top: 5rem;
+    }
+}
+
+@media(min-width:1442px) and (max-width:1920px) {
+
+    .banner .banner-sm {
+        margin-top: 0px;
+    }
+    .get-in-touch .c-con{
+        justify-content: start;
+    }
+    .c-con .c-pad{
+        padding-left: 11rem;
+    }
+}
